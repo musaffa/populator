@@ -34,7 +34,7 @@ module Populator
     # a random number of paragraphs within that range.
     def paragraphs(total)
       (1..interpret_value(total)).map do
-        '<p>' + sentences(3..8).capitalize + '</p>'
+        '<p>' + sentences(8..15).capitalize + '</p>'
       end.join('')
     end
 
