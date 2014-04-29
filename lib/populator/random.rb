@@ -35,7 +35,7 @@ module Populator
     def paragraphs(total)
       (1..interpret_value(total)).map do
         '<p>' + sentences(3..8).capitalize + '</p>'
-      end.join('\n')
+      end.join('')
     end
 
     # If an array or range is passed, a random value will be selected to match.
